@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruits Section</title>
+    <style>
+        /* Styles for your page */
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-image: url("backgroundG1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            text-align: center;
+            background-color: #def874;
+            padding: 10px;
+            color: #333;
+            position: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            vertical-align: middle;
+        }
+        h2 {
+            text-align: center;
+            color: #e6e5e5;
+            position: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            vertical-align: middle;
+        }
+        h3 {
+            text-align: center;
+            color: #0e0d0d;
+            background-color: #def874;
+            position: center;
+            top: 0;
+            left: 0;
+            width: 10%;
+            vertical-align: middle;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #eba732;
+            
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <script>
+            // JavaScript code for adding products to the cart
+        function addToCart(productName, price) {
+            var cart = document.getElementById('cart');
+            var item = document.createElement('li');
+            item.innerHTML = productName + ' - RM' + price.toFixed(2);
+            cart.appendChild(item);
+            }
+    </script>
+</head>
+
+<body>
+    <h1>Fruits Section</h1>
+    <h2>Choose the product you want </h2>
+    
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Image</th>
+            <th>Price/kg</th>
+            <th>Stock</th>
+            
+            
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td><img src="apple.jpg" alt="Apple"></td>
+            <td>RM 1.00</td>
+            <td>50</td>
+            <td><button onclick="addToCart('Apple', 1.00)">Add to Cart</button></td>
+
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td><img src="orange.jpg" alt="Orange"></td>
+            <td>RM 0.75</td>
+            <td>30</td>
+            <td><button onclick="addToCart('Apple', 0.75)">Add to Cart</button></td>
+            
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td><img src="banana.jpg" alt="Banana"></td>
+            <td>RM 0.50</td>
+            <td>40</td>
+            <td><button onclick="addToCart('Apple', 0.75)">Add to Cart</button></td>
+            
+        </tr>
+        <tr>
+            <td>Watermelon</td>
+            <td><img src="watermelon.jpg" alt="Watermelon"></td>
+            <td>RM 0.50</td>
+            <td>40</td>
+            <td><button onclick="addToCart('Apple', 0.75)">Add to Cart</button></td>
+            
+        </tr>
+        <tr>
+            <td>Dragonfruit</td>
+            <td><img src="dragonfruit.jpg" alt="Dragonfruit"></td>
+            <td>RM 0.50</td>
+            <td>40</td>
+            <td><button onclick="addToCart('Apple', 0.75)">Add to Cart</button></td>
+            
+        </tr>
+    </table>
+
+    <h3>Your Cart :</h3>
+    <ul id="cart"></ul>
+    <button onclick="ConfirmItem " <a href="Fruits.html? param1=productName&param2=price">Confirm Your Item</a></button>
+    
+</body>
+</html>
